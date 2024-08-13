@@ -1,8 +1,7 @@
 name Pipeline Example
 
 
-on:
-  workflow_run:
+on: none
 
   
 jobs:
