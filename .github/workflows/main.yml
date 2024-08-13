@@ -1,9 +1,8 @@
 name: Pipeline Example
 
 
-on: none
+on: [workflow_dispatch]
 
-  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +17,7 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
-      run: npm install
+      run: npm install jest 
 
     - name: Run tests
-      run: npm test
+      run: npx jest
